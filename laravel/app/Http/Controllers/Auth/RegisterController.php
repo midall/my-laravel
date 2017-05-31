@@ -1,9 +1,9 @@
 <?php
 
-namespace my-laravel\Http\Controllers\Auth;
+namespace mylaravel\Http\Controllers\Auth;
 
-use my-laravel\User;
-use my-laravel\Http\Controllers\Controller;
+use mylaravel\User;
+use mylaravel\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 

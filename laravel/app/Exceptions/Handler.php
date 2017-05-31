@@ -1,6 +1,6 @@
 <?php
 
-namespace my-laravel\Exceptions;
+namespace mylaravel\Exceptions;
 
 use Exception;
 use Illuminate\Auth\AuthenticationException;

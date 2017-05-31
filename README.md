@@ -1,4 +1,4 @@
-# My-LARAVEL Project
+# mylaravel Project
 
 ## Description
 This project illustrate the simple installation of laravel framework.

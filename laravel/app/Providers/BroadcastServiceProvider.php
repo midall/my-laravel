@@ -1,6 +1,6 @@
 <?php
 
-namespace my-laravel\Providers;
+namespace mylaravel\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Broadcast;

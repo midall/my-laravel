@@ -1,6 +1,6 @@
 <?php
 
-namespace my-laravel\Providers;
+namespace mylaravel\Providers;
 
 use Illuminate\Support\Facades\Event;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
@@ -13,8 +13,8 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
-        'my-laravel\Events\Event' => [
-            'my-laravel\Listeners\EventListener',
+        'mylaravel\Events\Event' => [
+            'mylaravel\Listeners\EventListener',
         ],
     ];
 

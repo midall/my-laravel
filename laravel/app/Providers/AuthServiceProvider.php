@@ -1,6 +1,6 @@
 <?php
 
-namespace my-laravel\Providers;
+namespace mylaravel\Providers;
 
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
@@ -13,7 +13,7 @@ class AuthServiceProvider extends ServiceProvider
      * @var array
      */
     protected $policies = [
-        'my-laravel\Model' => 'my-laravel\Policies\ModelPolicy',
+        'mylaravel\Model' => 'mylaravel\Policies\ModelPolicy',
     ];
 
     /**

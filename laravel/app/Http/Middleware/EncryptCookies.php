@@ -1,6 +1,6 @@
 <?php
 
-namespace my-laravel\Http\Middleware;
+namespace mylaravel\Http\Middleware;
 
 use Illuminate\Cookie\Middleware\EncryptCookies as BaseEncrypter;
 
