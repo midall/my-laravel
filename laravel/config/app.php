@@ -171,11 +171,11 @@ return [
         /*
          * Application Service Providers...
          */
-        mylaravel\Providers\AppServiceProvider::class,
-        mylaravel\Providers\AuthServiceProvider::class,
-        // mylaravel\Providers\BroadcastServiceProvider::class,
-        mylaravel\Providers\EventServiceProvider::class,
-        mylaravel\Providers\RouteServiceProvider::class,
+        App\Providers\AppServiceProvider::class,
+        App\Providers\AuthServiceProvider::class,
+        // App\Providers\BroadcastServiceProvider::class,
+        App\Providers\EventServiceProvider::class,
+        App\Providers\RouteServiceProvider::class,
 
     ],
 
