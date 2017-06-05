@@ -9,25 +9,17 @@
 |
 */
 
-
-//Route::get( 'home', 'Home@homepage');
-
-Route::get('home', function () {
-    return view('welcome');
+Route::get( 'home', function () {
+    return view( 'home' );
 });
 
-/*
-Route::post( 'home', function () {
-   return 'Hello World';
-});
- * 
-Route::put('foo/bar', function () {
-   //
+Route::get( 'about', function () {
+    return view( 'about' );
 });
 
-Route::delete('foo/bar', function () {
-   //
+
+Route::get( 'contact', function () {
+    return view( 'contact' );
 });
-*/
 
 ?>
