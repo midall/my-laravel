@@ -10,6 +10,13 @@
     <body>
         <div class="">
 			@yield('content')
+			
+			@section('sidebar')
+			<div class="sidebar">
+				<h3>Sidebar</h3>
+				This is a sidebar
+				@show
+			</div>
         </div>
     </body>
 </html>
