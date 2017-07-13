@@ -123,6 +123,7 @@ require '../constants.php';
 													<li>Apache 2.4.23</li>
 													<li>PHP 7.0.10</li>
 													<li>MySQL 5.7.14</li>
+													<li>Laravel 5.4.24</li>
 												</ol>
 												<div class="intro2 clearfix">
 													<p>
@@ -157,11 +158,11 @@ require '../constants.php';
 								<div class="col-md-12">
 									<ol>
 										<li>Download the package</li>
-										<li>Copy-paste them into your web directory (local or remote)</li>
+										<li>Via composer run the following command: composer create-project laravel/laravel –-prefer-dist</li>
 										<li></li>
 										<li></li>
 										<li></li>
-										<li></li>
+										<li>mylaravel.dev</li>
 									</ol>
 								</div>
 
