@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<h1>HOMEs</h1>
+<h1>HOME</h1>
 @endsection
 
 
