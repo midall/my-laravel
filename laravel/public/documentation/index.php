@@ -1,6 +1,3 @@
-<?php
-require '../constants.php';
-?>
 <!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -99,7 +96,7 @@ require '../constants.php';
 												<ul>
 													<li><strong>Item Name : </strong>My Laravel</li>
 													<li><strong>Item Version : </strong> v 0.1</li>
-													<li><strong>Author  : </strong> <a href="https://ntallas.eu/" target="_blank"><?php echo AUTHOR; ?></a></li>
+													<li><strong>Author  : </strong> <a href="https://ntallas.eu/" target="_blank">Michael Nt</a></li>
 													<li><strong>GitHub repository: </strong> <a href="https://github.com/midall/my-laravel" target="_blank">My Laravel project</a></li>
 												</ul>
 											</div>
@@ -280,7 +277,7 @@ require '../constants.php';
 
 									<pre class="brush: html">
 										<?php
-										$handle = fopen( '../changelog.md', 'r');
+										$handle = fopen( '../../../changelog.md', 'r');
 										while( ( $line = fgets( $handle ) ) !== false )
 										{
 											echo $line;
