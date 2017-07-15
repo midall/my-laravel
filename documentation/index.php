@@ -73,10 +73,10 @@ require '../constants.php';
 							<ul class="nav">
 								<li><a href="#line1">About the project</a></li>
 								<li><a href="#line2">How to Install</a></li>
-								<li><a href="#line3"></a>
+								<li><a href="#line3">Initial Steps</a>
 									<ul class="nav">
-										<li><a href="#line3_1"></a></li>
-										<li><a href="#line3_2"></a></li>
+										<li><a href="#line3_1">CSS/JS</a></li>
+										<li><a href="#line3_2">Dependencies</a></li>
 										<li><a href="#line3_3"></a></li>
 									</ul>
 								</li>
@@ -158,9 +158,23 @@ require '../constants.php';
 									<ol>
 										<li>Download the package</li>
 										<li>Via composer run the following command: composer create-project laravel/laravel –-prefer-dist</li>
-										<li></li>
-										<li></li>
-										<li></li>
+										<li>The above command will create a folder "laravel" in your root directory</li>
+										<li>Homepage (default index) is "/laravel/public/index.php". Access it either:</li>
+										<li>
+											<ol>
+												<li>Rename "/laravel/server.php" to "/laravel/index.php" and access the aplication in "mydomain/project/laravel"</li>
+												<li>Or create an alias to load the directory "/laravel/public" (example file "mylaravel.conf" including in "extrafiles" folder)</li>
+												<li>Or create a virtual host by adding on "apache\conf\extra\httpd-vhosts.conf" by following these steps: <br />
+													&lt;VirtualHost *:80&gt; DocumentRoot c:/wamp64/www/mylaravel/laravel/public ServerName mylaravel.dev &lt;/VirtualHost&gt;
+													<br />
+													and on "C:\Windows\System32\drivers\etc\hosts"
+													<br />
+													127.0.0.1       localhost
+													<br />
+													127.0.0.1       mylaravel.dev
+												</li>
+											</ol>
+										</li>
 										<li>mylaravel.dev</li>
 									</ol>
 								</div>
@@ -174,7 +188,7 @@ require '../constants.php';
 
 							<div class="row">
 								<div class="col-md-12 left-align">
-									<h2 class="dark-text">Empty <a href="#top">#back to top</a><hr></h2>
+									<h2 class="dark-text">Initial Steps <a href="#top">#back to top</a><hr></h2>
 								</div>
 								<!-- end col -->
 							</div>
@@ -182,11 +196,31 @@ require '../constants.php';
 
 							<div class="row">
 								<div class="col-md-12">
-									<h4 id="line3_1">Empty</h4>
-									<p></p>
+									<h4 id="line3_1">CSS/JS</h4>
+									<p><strong>Laravel Mix</strong></p>
+									<p>CSS and JS files are stored on</p>
+									<ol>
+										<li>resources/assets/css</li>
+										<li>resources/assets/js</li>
+									</ol>
+									<p>Laravel uses "Laravel Mix", to compile CSS, JS and to minified them into:</p>
+									<ol>
+										<li>public/css</li>
+										<li>public/js</li>
+									</ol>
 									<br />
 									
-									<h4 id="line3_2"></h4>
+									<h4 id="line3_2">Dependencies</h4>
+									<p><strong>Node.js</strong></p>
+									<p>Is a Runtime environment that allows to run JS in server and provides NPM (Node Package Manager)
+										to install packages and modules.</p>
+									<br />
+									
+									<p><strong>VUE</strong></p>
+									<p>JS front-end framwork/library</p>
+									<br />
+									
+									<p><strong>SASS</strong></p>
 									<p></p>
 									<br />
 									
