@@ -248,6 +248,15 @@
 										From "use Illuminate\Http\Request" the "Illuminate" defines that is from laravel and 
 										"Http\Request" defines that there is a post request</p>
 									
+									<p><strong>Data Migration</strong></p>
+									<p>
+										Create the model from command line "php artisan make:model Message -m" that will create the model
+										and also the migration data on database folder. The mgration is done from the command "php artisan migrate"
+									</p>
+									<p>
+										TIP: Controller's name should be plural and model's name should be single
+									</p>
+									
 								</div>
 							</div>
 
