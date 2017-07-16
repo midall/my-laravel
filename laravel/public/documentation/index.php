@@ -70,11 +70,11 @@
 							<ul class="nav">
 								<li><a href="#line1">About the project</a></li>
 								<li><a href="#line2">How to Install</a></li>
-								<li><a href="#line3">Initial Steps</a>
+								<li><a href="#line3">My Laravel</a>
 									<ul class="nav">
 										<li><a href="#line3_1">CSS/JS</a></li>
 										<li><a href="#line3_2">Dependencies</a></li>
-										<li><a href="#line3_3"></a></li>
+										<li><a href="#line3_3">Artisan</a></li>
 									</ul>
 								</li>
 								<li><a href="#line4">References</a></li>
@@ -240,8 +240,13 @@
 									</p>
 									<br />
 									
-									<h4 id="line3_3"></h4>
-									<p><strong></strong></p>
+									<h4 id="line3_3">Artisan</h4>
+									<p><strong>Controller</strong></p>
+									<p>Create controller with the command "php artisan make:controller ControllerName"</p>
+									<p>
+										Inside the controller there is "namespace", which defines that belongs to controllers. 
+										From "use Illuminate\Http\Request" the "Illuminate" defines that is from laravel and 
+										"Http\Request" defines that there is a post request</p>
 									
 								</div>
 							</div>
