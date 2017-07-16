@@ -209,8 +209,20 @@
 									
 									<h4 id="line3_2">Dependencies</h4>
 									<p><strong>Node.js</strong></p>
-									<p>Is a Runtime environment that allows to run JS in server and provides NPM (Node Package Manager)
-										to install packages and modules.</p>
+									<p>
+										Is a Runtime environment that allows to run JS in server and provides NPM 
+										(Node Package Manager) to install packages and modules.</p>
+									<p>Commands</p>
+									<li>
+										<ol>npm install -g, install node js inside laravel, -g stands for globally</ol>
+										<ol>npm update , updates node package manager</ol>
+										<ol>npm run dev, compiles SCSS into public folder</ol>
+										<ol>npm run watch, keeps the compiler running for detecting changes</ol>
+										<ol>npm install vue, install VUE</ol>
+										<ol>npm update vue, update VUE</ol>
+										<ol>npm install vuew-template-compiler</ol>
+										<ol>npm update vuew-template-compiler</ol>
+									</li>
 									<br />
 									
 									<p><strong>VUE</strong></p>
@@ -218,7 +230,14 @@
 									<br />
 									
 									<p><strong>SASS</strong></p>
-									<p></p>
+									<p>Style sheet language that Laravel will compile and include CSS into public folder.</p>
+									<br />
+									
+									<p><strong>Laravel Collective</strong></p>
+									<p>
+										Laravel Collective contains all the extra components of Laravel that have been 
+										removed from the core framework. I this project I use it for HTML and forms.
+									</p>
 									<br />
 									
 									<h4 id="line3_3"></h4>
@@ -234,7 +253,7 @@
 
 							<div class="row">
 								<div class="col-md-12 left-align">
-									<h2 class="dark-text"> Empty<a href="#top">#back to top</a><hr></h2>
+									<h2 class="dark-text"> References<a href="#top">#back to top</a><hr></h2>
 								</div>
 								<!-- end col -->
 							</div>
@@ -243,10 +262,10 @@
 							<div class="row">
 								<div class="col-md-12">
 									<h4>Useful Links and Reference</h4>
-									<p>Find below useful links and SCORM material that used for this development:</p>
+									<p>For this project the following link provide me the essential to install and run the project:</p>
 									<ol>
-										<li><a href="#" target="_blank">Link</a></li>
-										<li><a href="#" target="_blank">Link</a></li>
+										<li><a href="https://www.tutorialspoint.com/laravel/laravel_configuration.htm" target="_blank">Tutorialspoint</a></li>
+										<li><a href="https://www.youtube.com/watch?v=jnvu1GpylP0" target="_blank">How To Create Basic Laravel Website</a></li>
 										<li><a href="#" target="_blank">Link</a></li>
 									</ol>
 								</div>
