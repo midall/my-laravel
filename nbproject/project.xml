@@ -6,6 +6,8 @@
             <name>mylaravel</name>
         </data>
         <spellchecker-wordlist xmlns="http://www.netbeans.org/ns/spellchecker-wordlist/1">
+            <word>laborum</word>
+            <word>Lorem</word>
             <word>sidebar</word>
         </spellchecker-wordlist>
     </configuration>

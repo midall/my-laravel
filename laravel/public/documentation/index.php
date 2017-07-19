@@ -50,7 +50,7 @@
 						<div class="col-md-12">
 							<div class="big-title text-center">
 								<h1>My Laravel</h1>
-								<p class="lead">Documentation for the version 0.1beta</p>
+								<p class="lead">Documentation for the version 0.1</p>
 							</div>
 							<!-- end title -->
 						</div>
@@ -75,6 +75,7 @@
 										<li><a href="#line3_1">CSS/JS</a></li>
 										<li><a href="#line3_2">Dependencies</a></li>
 										<li><a href="#line3_3">Artisan</a></li>
+										<li><a href="#line3_4">Configuration</a></li>
 									</ul>
 								</li>
 								<li><a href="#line4">References</a></li>
@@ -95,26 +96,32 @@
 											<div class="intro1">
 												<ul>
 													<li><strong>Item Name : </strong>My Laravel</li>
-													<li><strong>Item Version : </strong> v 0.1</li>
+													<li><strong>Item Version : </strong> v0.1</li>
 													<li><strong>Author  : </strong> <a href="https://ntallas.eu/" target="_blank">Michael Nt</a></li>
-													<li><strong>GitHub repository: </strong> <a href="https://github.com/midall/my-laravel" target="_blank">My Laravel project</a></li>
+													<li><strong>GitHub repository: </strong> <a href="https://github.com/midall/my-laravel" target="_blank">My Laravel Project</a></li>
 												</ul>
 											</div>
-
+											
 											<hr>
 											<div>
-												<p>First of all, thank you so much for downloading this repository.
+												<p>
+													First of all, thank you so much for downloading this repository.
 													<strong>You are awesome!</strong>
-													<br> You are entitled to get all free lifetime upcoming versions to this product.
+													<br>
+													You are entitled to get all free lifetime upcoming versions to this product.
+													Just visit <a href="https://github.com/midall/my-laravel" target="_blank">GitHub</a> page and 
+													download the latest releases!
 												</p>
 												
-												<p>This documentation is to help you regarding each step of customization. 
-													Please go through the documentation carefully to understand how this
-													application is made and how to edit this properly.
-													Knowledge of PHP, MySQL, JS, HTML and CSS  is required to customize this application. </p>
+												<p>
+													This documentation is to help you regarding each step of customization. 
+													Please go through the documentation carefully to understand how this application 
+													is made and how to edit this properly. Knowledge of PHP, MySQL, JS, HTML and CSS 
+													is required to customize this application.
+												</p>
 												
 												<h4>Test Environment</h4>
-												<p>The application has been tested in: (NOT prerequisites)</p>
+												<p>The application has been tested in: (NOT prerequisites, but recommended)</p>
 												<ol>
 													<li>Apache 2.4.23</li>
 													<li>PHP 7.0.10</li>
@@ -125,15 +132,19 @@
 													<p>
 														<i class="fa fa-exclamation-triangle"></i>
 														Be careful while editing the software. If not edited properly, the functionality may break completely.
-														<br> No support is provided for faulty customization.
+														<br>
+														No support is provided for faulty customization.
 													</p>
 												</div>
 												
 												<h4>Enhancements</h4>
-												<p></p>
+												<p>
+													Enhancement will continue throughout development and until the application reach 
+													the final stage.
+												</p>
 											</div>
 										</div>
-
+										
 									</div>
 									<!-- end row -->
 								</div>
@@ -152,27 +163,36 @@
 							
 							<div class="row">
 								<div class="col-md-12">
+									<p>
+										Laravel requires PHP to run, make sure that your (virtual) server runs PHP by running in the 
+										command line <code>php -v</code>
+									</p>
+									<p>
+										Also Composer(dependency manager for PHP) is needed to install Laravel, make sure that your 
+										(virtual) server have composer installed by running in the command line <code>composer</code>
+									</p>
+									<p>
+										After installing Laravel as a project (see steps below) test if is successful by running in 
+										the command line <code>php artisan</code>
+									</p>
 									<ol>
 										<li>Download the package</li>
-										<li>Via composer run the following command: composer create-project laravel/laravel –-prefer-dist</li>
+										<li>Via composer run the following command: <code>composer create-project laravel/laravel –-prefer-dist</code></li>
 										<li>The above command will create a folder "laravel" in your root directory</li>
 										<li>Homepage (default index) is "/laravel/public/index.php". Access it either:</li>
 										<li>
-											<ol>
-												<li>Rename "/laravel/server.php" to "/laravel/index.php" and access the aplication in "mydomain/project/laravel"</li>
-												<li>Or create an alias to load the directory "/laravel/public" (example file "mylaravel.conf" including in "extrafiles" folder)</li>
-												<li>Or create a virtual host by adding on "apache\conf\extra\httpd-vhosts.conf" by following these steps: <br />
-													&lt;VirtualHost *:80&gt; DocumentRoot c:/wamp64/www/mylaravel/laravel/public ServerName mylaravel.dev &lt;/VirtualHost&gt;
-													<br />
-													and on "C:\Windows\System32\drivers\etc\hosts"
-													<br />
-													127.0.0.1       localhost
-													<br />
-													127.0.0.1       mylaravel.dev
-												</li>
-											</ol>
+											- Rename "/laravel/server.php" to "/laravel/index.php" and access the aplication in "mydomain/project/laravel"</li>
+											<br />- Or create an alias to load the directory "/laravel/public" (example file "mylaravel.conf" including in "extrafiles" folder)</li>
+											<br />- Or create a virtual host by adding on "apache\conf\extra\httpd-vhosts.conf" by following these line: <br />
+											<br /> &lt;VirtualHost *:80&gt; DocumentRoot c:/wamp64/www/mylaravel/laravel/public ServerName mylaravel.dev &lt;/VirtualHost&gt;
+											<br /> and on "C:\Windows\System32\drivers\etc\hosts" these two lines:
+											<br /> 127.0.0.1       localhost
+											<br /> 127.0.0.1       mylaravel.dev
+											<br />
+											<br /> Access the site using the url: mylaravel.dev
+											
 										</li>
-										<li>mylaravel.dev</li>
+										<li>As an alternative way to start laravel is to run the command <code>php laravel serve</code> and copy-paste the URL</li>
 									</ol>
 								</div>
 
@@ -194,6 +214,7 @@
 							<div class="row">
 								<div class="col-md-12">
 									<h4 id="line3_1">CSS/JS</h4>
+									
 									<p><strong>Laravel Mix</strong></p>
 									<p>CSS and JS files are stored on</p>
 									<ol>
@@ -208,21 +229,39 @@
 									<br />
 									
 									<h4 id="line3_2">Dependencies</h4>
+									<p><strong>Blade</strong></p>
+									<p>
+										Laravel template engine that allows to works with the views. Laravel will read a 
+										name.blade.php file and compile it to PHP code and then serve the file. Examples: 
+									</p>
+									<p>
+										The foreach loop in PHP<br />
+										<code>&lt;?php foreach( $tasks as $task ): ?&gt;<br />&lt;? endforeach; ?&gt;</code>
+										<br />becomes:<br />
+										<code>@foreach($tasks as $task)<br /> @endforeach</code>
+									</p>
+									<p>
+										The simple echo command in PHP<br />
+										<code>&lt;?php echo $name; ?&gt;</code>
+										<br />becomes:<br />
+										<code>{{ $name }}</code>
+									</p>
+									
 									<p><strong>Node.js</strong></p>
 									<p>
 										Is a Runtime environment that allows to run JS in server and provides NPM 
 										(Node Package Manager) to install packages and modules.</p>
 									<p>Commands</p>
-									<li>
-										<ol>npm install -g, install node js inside laravel, -g stands for globally</ol>
-										<ol>npm update , updates node package manager</ol>
-										<ol>npm run dev, compiles SCSS into public folder</ol>
-										<ol>npm run watch, keeps the compiler running for detecting changes</ol>
-										<ol>npm install vue, install VUE</ol>
-										<ol>npm update vue, update VUE</ol>
-										<ol>npm install vuew-template-compiler</ol>
-										<ol>npm update vuew-template-compiler</ol>
-									</li>
+									<ol>
+										<li>npm install -g, install node js inside laravel, -g stands for globally</li>
+										<li>npm update , updates node package manager</li>
+										<li>npm run dev, compiles SCSS into public folder</li>
+										<li>npm run watch, keeps the compiler running for detecting changes</li>
+										<li>npm install vue, install VUE</li>
+										<li>npm update vue, update VUE</li>
+										<li>npm install vuew-template-compiler</li>
+										<li>npm update vuew-template-compiler</li>
+									</ol>
 									<br />
 									
 									<p><strong>VUE</strong></p>
@@ -248,15 +287,26 @@
 										From "use Illuminate\Http\Request" the "Illuminate" defines that is from laravel and 
 										"Http\Request" defines that there is a post request</p>
 									
-									<p><strong>Data Migration</strong></p>
+									<p><strong>Data Migration/Model</strong></p>
 									<p>
 										Create the model from command line "php artisan make:model Message -m" that will create the model
-										and also the migration data on database folder. The mgration is done from the command "php artisan migrate"
+										and also the migration data on database folder. The mgration is done from the command 
+										<code>php artisan migrate</code>
 									</p>
 									<p>
 										TIP: Controller's name should be plural and model's name should be single
 									</p>
+									<p>
+										Laravel is using Eloquent for working with database. So for fetching results and for 
+										inserting eloquent syntax is used and not directly SQL commands.
+									</p>
 									
+									<h4 id="line3_4">Configuration</h4>
+									<p><strong>.env</strong></p>
+									<p>
+										The .env file stores securely keys, API informations etc. Must create two files one for 
+										local environement (e.g. change MySQL) and one for production.
+									</p>
 								</div>
 							</div>
 
@@ -280,7 +330,7 @@
 									<ol>
 										<li><a href="https://www.tutorialspoint.com/laravel/laravel_configuration.htm" target="_blank">Tutorialspoint</a></li>
 										<li><a href="https://www.youtube.com/watch?v=jnvu1GpylP0" target="_blank">How To Create Basic Laravel Website</a></li>
-										<li><a href="#" target="_blank">Link</a></li>
+										<li><a href="https://laracasts.com/series" target="_blank">Laracasts</a></li>
 									</ol>
 								</div>
 							</div>
